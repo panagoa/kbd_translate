@@ -11,6 +11,29 @@ Original location: `/Users/panagoa/PycharmProjects/zbze_blog/data/external/pdf/K
 
 ## Directory Structure
 
+### `morphology_intro/` (Chunks 10-11, Pages 46-56)
+
+Theoretical foundations of morphology:
+
+- **chunk_010** (pages 46-50): End of phonetics (orthoepy, syllables) + Morphology chapter introduction
+- **chunk_011** (pages 51-55): Stem structure foundations
+
+**Key Sections:**
+- Глава третья. МОРФОЛОГИЯ (Chapter 3: Morphology introduction)
+- 1. Общая характеристика морфологической системы (General characteristics of morphological system)
+- 2. Структура основы (Stem structure):
+  - 2.1. Фонетическая структура основы (Phonetic structure)
+  - 2.2. Морфологическая структура основы (Morphological structure)
+    - Членимые и нечленимые основы (Segmentable/non-segmentable stems)
+    - Производные и непроизводные основы (Derived/underived stems)
+    - Прерывистые и непрерывистые основы (Discontinuous/continuous stems)
+    - Нейтральные и ненейтральные основы (Neutral/non-neutral stems)
+    - Свободные и несвободные основы (Free/bound stems)
+  - 2.3. Дифференциация именных и глагольных основ (Nominal vs verbal stem differentiation)
+
+**Why This Section is Important:**
+Provides theoretical framework for understanding stem types and morphological operations across all word classes.
+
 ### `verb_morphology/` (Chunks 23-30, Pages 111-150)
 
 The most critical section for understanding Kabardian verb structure:
@@ -141,6 +164,30 @@ Deverbal formations (participles, gerunds, infinitives):
 - 9.2. Деепричастие (Gerunds with -у/-уэ and -рэ suffixes)
 - 9.3. Инфинитив (Infinitive forms)
 - 9.4. Масдар (Masdar/verbal noun)
+
+### `adverbs/` (Chunks 50-51, Pages 246-256)
+
+Adverb formation and classification - **essential for circumstantial expressions**:
+
+- **chunk_050** (pages 246-250): End of verbal derivations (infinitive, masdar) + adverb introduction
+- **chunk_051** (pages 251-255): Adverb types and formation
+
+**Key Sections:**
+- 9.3. Инфинитив (Infinitive forms)
+- 9.4. Масдар (Masdar/verbal noun)
+- **10. Наречие** - Adverbs:
+  - 10.1. Общая характеристика (General characteristics)
+  - 10.2. Корневые наречия (Root adverbs)
+  - 10.3. Производные наречия (Derived adverbs)
+  - 10.4. Образование наречий (Adverb formation - beginning):
+    - From qualitative adjectives
+    - From pronominal stems
+    - From nouns
+
+**Why This Section is Important:**
+Adverbs are essential for expressing time (джыри "now", пщэдей "yesterday"), place (мыдрэ "here"), and manner (дахэу "beautifully"). Critical for complete sentence translation with circumstantial modifiers.
+
+**Note:** This section contains the BEGINNING of adverbs chapter. The continuation (pages 256-275) is in `function_words/` chunks 52-55.
 
 ### `function_words/` (Chunks 52-55, Pages 262-282) ⭐ CRITICAL
 
