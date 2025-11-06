@@ -282,7 +282,8 @@ Present Tenses:
 Perfect/Aorist System:
 ```
 - Perfect I: с-ы-кIуа-щ "I went (recently)" ← perfective aspect marker -щ
-- Perfect II: с-ы-кIуэ-рт "I had gone" ← remote past -рт
+- Perfect II: с-ы-кIуа-т "I had gone (then)" ← Perfect I + -т marker (limited time)
+- Imperfect: с-ы-кIуэ-т "I was going" ← Imperfect stem + -т
 - Aorist: с-ы-кIуэ-гъа "I (generally) go" ← gnomic aspect
 ```
 
@@ -296,8 +297,8 @@ Future:
 
 ```
 Indicative:     с-ы-кIуащ      "I went" (factual)
-Conditional:    с-ы-кIуэ-н     "I would go" (hypothetical)
-Conjunctive:    с-ы-кIуэ-рэ    "I may have gone" (uncertain)
+Conditional:    с-ы-кIуэ-мэ    "if I go" (hypothetical condition)
+Conjunctive:    с-ы-кIуэ-нт    "I would go" (subjunctive)
 Optative:       с-ы-кIуа-рэт   "Let me go" (wish/desire)
 Imperative:     кIуэ           "Go!" (command)
 ```
@@ -469,12 +470,12 @@ grep -E "\-н\b|\-ну\b|инфинитив" chunks_049
 
 ```
 TEMPORAL ADVERBS (время):
-- Root adverbs: джыри "now", пщэдей "yesterday", нобэ "today"
+- Root adverbs: иджыри "now/still", пщэдей "yesterday", нобэ "today"
 - Derived: мыгувэу "soon", хэкIуэтауэ "late"
 - Duration: зэпымыууэ "continuously"
 
 SPATIAL ADVERBS (место):
-- Location: мыдрэ "here", ардрэ "there", дэнэ "where"
+- Location: мыдэ "here/hither", модэ "there/thither", дэнэ "where"
 - Direction: модэкIэ "there" (direction), ипщэкIэ "upward"
 - Distance: жыжьэу "far away"
 
@@ -511,11 +512,11 @@ REDUPLICATION:
 # Find adverb formation rules
 grep -i "наречи\|adverb" chunks_050-051
 
-# Find temporal adverbs (джыри, пщэдей)
-grep -E "джыри|пщэдей|нобэ|время" chunks_051
+# Find temporal adverbs (иджыри, пщэдей)
+grep -E "иджыри|пщэдей|нобэ|время" chunks_051
 
-# Find spatial adverbs (мыдрэ, ардрэ)
-grep -E "мыдрэ|ардрэ|место" chunks_051
+# Find spatial adverbs (мыдэ, модэ)
+grep -E "мыдэ|модэ|место" chunks_051
 
 # Find manner adverbs (-у suffix)
 grep -E "\-у\b|\-кIэ\b" chunks_050-051
@@ -523,8 +524,8 @@ grep -E "\-у\b|\-кIэ\b" chunks_050-051
 
 **Critical for Skills:**
 - `kbd-translator`: Adverbs are crucial for translating Russian temporal/spatial/manner expressions
-  - "Yesterday" → пщэдей, "now" → джыри, "here" → мыдрэ
-  
+  - "Yesterday" → пщэдей, "now/still" → иджыри, "here" → мыдэ, "there" → модэ
+
 - `kbd-morphology`: Identifying adverbial suffixes and formation patterns
 
 ---
@@ -546,21 +547,21 @@ Kabardian postpositions function like Russian prepositions but appear AFTER noun
 
 ```
 LOCATIVE POSTPOSITIONS:
-- гъун "near" + possessive suffix: унэм гъунэ-р "near the house"
-- мыш "over/above" + possessive: унэм мыш-щ "over the house"
-- хьэ "below": унэм хьэ-у "below the house"
-- фэ "in/inside" + possessive: унэм фэ-м "inside the house"
+- деж/дей "у, от, около, возле" (at, from, near, by): унэм деж "near the house"
+- щыщ "из" (from, out of): унэм щыщ "from the house"
+- щхьэкIэ "для, ради, из-за" (for, because of): унэм щхьэкIэ "for the house"
 
 TEMPORAL POSTPOSITIONS:
-- мыхьэнэ "after" + ablative case: нобэ мыхьэнэ "after today"
-- дыдей "before" + ablative: нобэ дыдей "before today"
+- пщIондэ "до" (until, up to): нобэ пщIондэ "until today"
+- лъандэрэ "с" (with, since): нобэ лъандэрэ "since today"
+- иджыри къэс "до сих пор" (until now): иджыри къэс "until now"
 
-CAUSAL/COMITATIVE POSTPOSITIONS:
-- зэ "with/because of" + possessive: си зэ-м "with me"
-- тlэнырэ "because of": ар яIысэ тlэнырэ "because of his misfortune"
+CAUSAL/PURPOSIVE POSTPOSITIONS:
+- папщIэ/папщIэкIэ "для, ради, о" (for, about): абы папщIэ "about him/for him"
+- щхьэкIэ "для, ради, из-за" (for, because of): сэ щхьэкIэ "because of me"
 
-COMPARATIVE POSTPOSITIONS:
-- хуэдэ "like": ар хуэдэ "like him"
+LIMITATIVE POSTPOSITIONS:
+- нэгъунэ "до, вплоть до" (up to, as far as): къалэм нэгъунэ "up to the city"
 ```
 
 **Conjunction System (chunks_054-055) - CRITICAL:**
@@ -630,21 +631,21 @@ grep -i "частица\|particle" chunks_055
 Kabardian follows strict Subject-Object-Verb (SOV) order:
 
 ```
-BASIC SOV STRUCTURE:
+BASIC SOV STRUCTURE (verified example from chunk_074):
 
-Russian (SVO): Я вижу дом          Subject-Verb-Object
-               I  see   house
+Russian (SVO): Парень книгу прочтет    Subject-Verb-Object
+               Boy    book   will-read
 
-Kabardian (SOV): Сэ унэр сыплъ     Subject-Object-Verb
-                 I  house see
+Kabardian (SOV): ЩIалэм тхылъыр иджынущ  Subject-Object-Verb
+                 Boy-the book-the will-read
 
-EXPANSION WITH MODIFIERS (SOV):
+EXPANSION WITH MODIFIERS (SOV, verified from chunk_074):
 
-Russian:     Я вчера видел большой новый красный дом
-             I yesterday saw big new red house
+Russian:     Я тебя вчера видел
+             I you yesterday saw
 
-Kabardian:   Сэ пщэдей ар лъагъуэ шIуэуэ дахэ унэр сыплъащ
-             I yesterday the big new red house saw
+Kabardian:   Сэ уэ дыгъуасэ услъэгъуащ
+             I you yesterday saw
 
 Order rules:
 1. Subject (with definite marker -р if definite)
@@ -1059,8 +1060,8 @@ Use this table to locate specific grammatical topics in the chunks:
 
 | Topic | Chunks | Pages | Key Content |
 |-------|--------|-------|-------------|
-| **Temporal adverbs (time)** | 051 | 251-255 | джыри "now", пщэдей "yesterday" |
-| **Spatial adverbs (place)** | 051 | 251-255 | мыдрэ "here", ардрэ "there" |
+| **Temporal adverbs (time)** | 051 | 251-255 | иджыри "now/still", пщэдей "yesterday" |
+| **Spatial adverbs (place)** | 051 | 251-255 | мыдэ "here/hither", модэ "there/thither" |
 | **Manner adverbs (-у suffix)** | 050-051 | 246-256 | How things are done |
 | **Adverb derivation from adj** | 051 | 251-255 | дахэ → дахэу "beautifully" |
 
@@ -1265,7 +1266,7 @@ grep -i "относител\|relative" syntax/chunk_076*.txt
    - Helps identify postposition entries in glossaries
 
 2. **adverbs/chunks_050-051** - Adverb roots
-   - Temporal (джыри, пщэдей), spatial (мыдрэ, ардрэ)
+   - Temporal (иджыри, пщэдей), spatial (мыдэ, модэ)
 
 3. **All sections** - For semantic understanding
    - Use grammar to understand context of dictionary entries
