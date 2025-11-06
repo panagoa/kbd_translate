@@ -30,6 +30,38 @@ The most critical section for understanding Kabardian verb structure:
 - 8.5.1. Формы проявления полиперсонализма (Polipersonalism forms)
 - 8.6. Глагольные парадигмы (Verb paradigms)
 
+### `advanced_verbs/` (Chunks 31-44, Pages 151-222) ⭐ CRITICAL
+
+Advanced verb morphology - **essential for complex verb forms**:
+
+- **chunks_031-033** (pages 151-165): Tense categories (настоящее, будущее, перфект, имперфект, плюсквамперфект, аорист)
+- **chunks_033-034** (pages 166-170): Mood categories (изъявительное, условное, сослагательное, желательное, повелительное)
+- **chunks_034-036** (pages 171-180): Negative forms (-къым suffix and negation patterns)
+- **chunk_036** (pages 181-185): Question forms (intonation, affixes, particles)
+- **chunks_037-038** (pages 186-190): Verb derivation (prefixation, suffixation, morpheme arrangement)
+- **chunks_038-039** (pages 191-199): Derivational categories:
+  - 8.12. Фактитивные глаголы (Factitive verbs)
+  - 8.13. Категория каузатива (Causative: гъэ-)
+  - 8.14. Категория союзности (Conjunction)
+  - 8.15. Категория совместности (Comitative: дэ-)
+  - 8.16. Категория взаимности (Reciprocal: зэ-)
+  - 8.17. Категория версии (Version: хуэ-, фIэ-)
+  - 8.18. Категория потенциалиса (Potential: хуэ-)
+  - 8.19. Категория непроизвольности (Involuntary)
+- **chunks_040-042** (pages 200-215): Directional and local preverbs (къэ-, къы-, щы-, дэ-, те- and complex prefixes)
+- **chunks_042-044** (pages 216-222): Ablaut in verb derivation (models with -кI, -хь suffixes)
+
+**Key Sections:**
+- **8.7. Категория времени** - TAM suffixes critical for tense marking
+- **8.8. Категория наклонения** - Mood distinctions essential for translation
+- **8.9. Отрицательные формы** - Negation with -къым
+- **8.11. Глагольное словообразование** - Verb derivation patterns
+- **8.13-8.19. Деривационные категории** - Causative, reciprocal, version, potential
+- **8.20. Направительные префиксы** - Preverbs for direction and location
+
+**Why This Section is Critical:**
+This section completes the verb morphology coverage with TAM markers, moods, negation, and derivational operations. Without understanding these patterns, the kbd-translator and kbd-morphology skills cannot handle complex verb forms correctly.
+
 ### `phonetics/` (Chunks 6-9, Pages 26-45)
 
 Phonetic system and sound patterns:
@@ -63,6 +95,36 @@ Noun morphology and word formation:
 - 3.5. Категория притяжательности (Possessiveness)
 - 3.7. Словообразование существительных (Noun derivation)
 
+### `adjectives/` (Chunks 17-20, Pages 87-100)
+
+Adjective morphology and degrees of comparison:
+
+- **chunk_017** (pages 81-85): Adjectives as a part of speech
+- **chunk_018** (pages 86-90): Qualitative adjectives and comparative degree
+- **chunk_019** (pages 91-95): Superlative degree and evaluative forms
+- **chunk_020** (pages 96-100): Relative adjectives and declension
+
+**Key Sections:**
+- 5.2. Качественные прилагательные (Qualitative adjectives)
+- 5.2.2. Степени сравнения (Degrees of comparison: comparative, superlative)
+- 5.2.4. Формы оценки (Evaluative forms: augmentative, diminutive)
+- 5.3. Относительные прилагательные (Relative adjectives: prenominal vs postnominal)
+- 5.6. Словообразование прилагательных (Adjective derivation: suffixes, prefixes, compounding)
+
+### `numerals/` (Chunks 20-22, Pages 101-111)
+
+Number system and numeral formation:
+
+- **chunk_020** (pages 101-105): Counting system (vigesimal/base-20)
+- **chunk_021** (pages 106-110): Cardinal and ordinal numerals
+- **chunk_022** (pages 111-115): Fractional, distributive, and collective numerals
+
+**Key Sections:**
+- 6.2. Система счисления (Counting system: base-20 vigesimal system)
+- 6.3. Образование количественных числительных (Cardinal numeral formation)
+- 6.5. Сочетание числительных с существительными (Numeral-noun combinations)
+- 6.10. Порядковые числительные (Ordinal numerals)
+
 ### `verbal_derivations/` (Chunks 44-49, Pages 222-247)
 
 Deverbal formations (participles, gerunds, infinitives):
@@ -79,6 +141,28 @@ Deverbal formations (participles, gerunds, infinitives):
 - 9.2. Деепричастие (Gerunds with -у/-уэ and -рэ suffixes)
 - 9.3. Инфинитив (Infinitive forms)
 - 9.4. Масдар (Masdar/verbal noun)
+
+### `function_words/` (Chunks 52-55, Pages 262-282) ⭐ CRITICAL
+
+Function words (postpositions, conjunctions, particles) - **essential for sentence structure**:
+
+- **chunk_052** (pages 256-260): Adverbs (final sections)
+- **chunk_053** (pages 261-265): Postpositions (morphology and grammar)
+- **chunk_054** (pages 266-270): Postposition functions and conjunction types
+- **chunk_055** (pages 271-275): Subordinating conjunctions and particles
+
+**Key Sections:**
+- **11.1. Послелоги** - Postpositions (function like prepositions in Russian)
+  - 11.1.1. Морфологическая характеристика (Morphological features)
+  - 11.1.2. Грамматическая характеристика (Grammatical functions)
+- **11.2. Союзы** - Conjunctions
+  - 11.2.1. Сочинительные союзы (Coordinating: и, ауэ, е)
+  - 11.2.2. Подчинительные союзы (Subordinating)
+- **11.3. Частицы** - Particles
+  - 11.3.1. Значения частиц (Particle meanings and functions)
+
+**Why This Section is Critical:**
+Postpositions in Kabardian are critical for expressing spatial, temporal, and other relationships (like prepositions in Russian). Conjunctions and particles are essential for connecting clauses and modifying meanings. Without understanding these, translation of complex sentences is impossible.
 
 ### `syntax/` (Chunks 56-80, Pages 282-404) ⭐ CRITICAL
 
