@@ -1,0 +1,271 @@
+================================================================================
+COMPREHENSIVE REFERENCE GUIDE SUMMARY
+kbd_translate Grammar & Data Resources
+================================================================================
+
+CREATED: 2025-11-06
+LOCATION: /Users/panagoa/PycharmProjects/kbd_translate/GRAMMAR_REFERENCE_GUIDE.md (1318 lines)
+
+================================================================================
+OVERVIEW
+================================================================================
+
+This comprehensive guide maps ALL grammar resources and data files needed by
+Claude Skills: kbd-translator, kbd-morphology, kbd-glossary
+
+Total Resources:
+- 79 grammar chunks (2.74MB) covering pages 26-404 of academic grammar
+- 292k verified translation pairs (45MB corpus)
+- 2 large glossaries (18.4MB)
+- 100k+ Kabardian sentence examples
+
+================================================================================
+GRAMMAR STRUCTURE (11 sections, 79 files)
+================================================================================
+
+PHONETICS (chunks 006-009, pages 26-45, 136KB)
+  ├─ Sound system, consonants (including ejectives: Ӏ, хь, къ)
+  ├─ Vowel system and alternations (ы:э ablaut)
+  └─ Use: Character normalization, morphophonological processes
+
+MORPHOLOGY INTRO (chunks 010-011, pages 46-56, 72KB)
+  ├─ Theoretical foundations of morphology
+  ├─ Stem type classifications (segmentable, derived, continuous)
+  └─ Use: Understanding morphological structures
+
+NOUNS (chunks 012-016, pages 56-80, 180KB)
+  ├─ CRITICAL: Definiteness (-р marker) for translation
+  ├─ Case system (ergative, postpositional, oblique)
+  ├─ Number (-хэ plural) and possessiveness
+  └─ Use: Noun morphology, case selection
+
+ADJECTIVES (chunks 017-020, pages 81-100, 128KB)
+  ├─ Comparative degree (-рэ suffix)
+  ├─ Superlative and evaluative forms (-шхуэ, -кIэ)
+  └─ Use: Translating Russian adj comparatives
+
+NUMERALS (chunks 020-022, pages 101-115, 96KB)
+  ├─ Vigesimal (base-20) counting system
+  ├─ Cardinal, ordinal, distributive numerals
+  └─ Use: Numeral recognition and translation
+
+VERB MORPHOLOGY (chunks 023-030, pages 111-150, 244KB)
+  ├─ Polypersonalism (multi-argument verbs)
+  ├─ Person marking (1-4 participant paradigms)
+  └─ Use: Understanding verb prefix positions
+
+ADVANCED VERBS ⭐⭐⭐ (chunks 031-044, pages 151-222, 492KB) CRITICAL
+  ├─ TAM SYSTEM:
+  │   ├─ Present tenses (Present 1, 2, 3)
+  │   ├─ Past/Aorist (Perfect I -щ, Perfect II -рт, Aorist -гъа)
+  │   └─ Future (Future I -ну, Future II -г(ъ)ащ)
+  ├─ MOOD SYSTEM:
+  │   ├─ Indicative (factual)
+  │   ├─ Conditional (-н suffix, hypothetical)
+  │   ├─ Conjunctive (-рэ, uncertain)
+  │   ├─ Optative (-рэт, wish/desire)
+  │   └─ Imperative (commands)
+  ├─ NEGATION: -къым suffix (ALL tenses)
+  ├─ DERIVATIONAL CATEGORIES:
+  │   ├─ Causative (гъэ- "make/cause")
+  │   ├─ Reciprocal (зэ- "mutual")
+  │   ├─ Comitative (дэ- "with/together")
+  │   ├─ Version (хуэ-/фIэ- "directional nuance")
+  │   └─ Potential (хуэ- "ability")
+  ├─ DIRECTIONAL PREVERBS:
+  │   ├─ къэ- "away from"
+  │   ├─ къы- "toward"
+  │   ├─ щы- "upward"
+  │   ├─ дэ- "downward"
+  │   └─ те- "along surface"
+  └─ Use: ESSENTIAL for kbd-translator (verb tense matching)
+
+VERBAL DERIVATIONS (chunks 044-049, pages 216-247, 220KB)
+  ├─ Participles (subject, object, adverbial)
+  ├─ Gerunds (-у/-уэ, -рэ suffixes)
+  ├─ Infinitives (-н, -ну, bare stem forms)
+  └─ Use: Relative clauses, temporal expressions
+
+ADVERBS (chunks 050-051, pages 246-256, 72KB)
+  ├─ Temporal: джыри "now", пщэдей "yesterday", нобэ "today"
+  ├─ Spatial: мыдрэ "here", ардрэ "there", дэнэ "where"
+  ├─ Manner: -у suffix derivatives (дахэу "beautifully")
+  └─ Use: Circumstantial expressions in translation
+
+FUNCTION WORDS ⭐⭐ (chunks 052-055, pages 256-282, 152KB) CRITICAL
+  ├─ POSTPOSITIONS (function like Russian prepositions):
+  │   ├─ Locative: гъун "near", мыш "over", хьэ "below", фэ "in"
+  │   ├─ Temporal: мыхьэнэ "after", дыдей "before"
+  │   ├─ Causal: зэ "because of"
+  │   └─ Comparative: хуэдэ "like"
+  │   └─ All take possessive suffixes (-р, -м, -у)
+  ├─ CONJUNCTIONS:
+  │   ├─ Coordinating: и "and", ауэ "but", е "or"
+  │   └─ Subordinating: фэ "that", зэрыIуэу "if/when", гъуэм "because"
+  ├─ PARTICLES: гущэ "even", аркъудей "only", иIэ "let's"
+  └─ Use: ESSENTIAL for sentence structure and connections
+
+SYNTAX ⭐⭐⭐ (chunks 056-080, pages 282-404, 932KB) CRITICAL
+  ├─ WORD ORDER: Subject-Object-Verb (SOV) - MANDATORY ⭐⭐⭐
+  │   ├─ Rules in chunks 074-075 (pages 366-375)
+  │   └─ Modifier position, case interaction
+  ├─ COMPLEMENTS: Direct/indirect objects, oblique complements
+  ├─ ATTRIBUTES: Prenominal modifiers, relative clauses
+  ├─ COMPLEX SENTENCES: Coordination, subordination, embedding
+  └─ Use: ESSENTIAL for kbd-translator (SVO→SOV transformation)
+
+================================================================================
+TOPIC INDEX (Quick Lookup)
+================================================================================
+
+Find grammar for specific topics:
+
+TAM System:
+  - Present tenses → chunks 031-033 (pages 151-165)
+  - Past/Aorist → chunks 031-033 (pages 151-165)
+  - Future → chunks 031-033 (pages 151-165)
+  - Negation (-къым) → chunks 034-036 (pages 171-185)
+
+Moods:
+  - Indicative/Conditional → chunks 033-034 (pages 161-170)
+  - Optative/Imperative → chunks 034-035 (pages 171-175)
+
+Verb Derivation:
+  - Causative (гъэ-) → chunks 038-039 (pages 191-199)
+  - Reciprocal (зэ-) → chunks 039-040 (pages 200-205)
+  - Directional preverbs → chunks 040-042 (pages 206-215)
+
+Noun Grammar:
+  - Definiteness (-р) → chunks 013 (pages 61-65)
+  - Cases → chunks 014 (pages 66-70)
+  - Number/Possessive → chunks 015 (pages 71-75)
+
+Function Words:
+  - Postpositions → chunks 053-054 (pages 261-270)
+  - Conjunctions → chunks 054-055 (pages 266-275)
+
+Syntax:
+  - SOV word order → chunks 074-075 (pages 366-375) ⭐
+  - Complex sentences → chunks 076-080 (pages 376-404)
+
+Deverbal Forms:
+  - Participles → chunks 045-046 (pages 221-230)
+  - Gerunds → chunks 047-049 (pages 231-245)
+  - Infinitives → chunks 049 (pages 241-245)
+
+================================================================================
+DATA FILES
+================================================================================
+
+Translation Corpus:
+  File: /data/translations/sents_292k.csv
+  Size: 45MB (~292,000 pairs)
+  Format: CSV with columns: source (Kabardian), translated (Russian)
+  Usage: Grep with -m N limit (never load entire file)
+  Purpose: CORPUS-FIRST approach for kbd-translator
+
+Rus-Ady Dictionary (Russian→Kabardian):
+  File: /data/glossary/Rus-Ady_UASP.csv
+  Size: 3.4MB (~15,989 entries)
+  Format: CSV with HTML content
+  Usage: Fallback source for kbd-translator, grep -i -m 1
+  Purpose: Base word translations
+
+Ady-Ady Dictionary (Kabardian explanatory):
+  File: /data/glossary/Ady-Ady_AP.csv
+  Size: 15MB (~98,412 entries)
+  Format: CSV with HTML definitions
+  Usage: Grep with -m 1-2 limit (never Read entire file)
+  Purpose: PRIMARY for kbd-glossary skill
+
+Sentence Corpus:
+  File: /data/00_kbd_sentences.csv
+  Size: 7.3MB (~100k+ sentences)
+  Format: CSV with single column "sent"
+  Usage: Pattern extraction, examples
+  Purpose: Sentence-level analysis
+
+================================================================================
+FOR EACH SKILL - PRIORITY RESOURCES
+================================================================================
+
+kbd-translator (HIGHEST PRIORITY):
+  1. MUST READ: chunks 074-075 (syntax/SOV word order) ⭐⭐⭐
+  2. MUST READ: chunks 031-044 (advanced_verbs/TAM, mood, negation) ⭐⭐⭐
+  3. MUST READ: chunks 053-055 (function_words/postpositions, conjunctions) ⭐⭐
+  4. SHOULD READ: chunks 023-030 (verb_morphology/multi-person paradigms)
+  5. USE: sents_292k.csv corpus for CORPUS-FIRST approach
+
+kbd-morphology (SECONDARY PRIORITY):
+  1. MUST READ: chunks 023-030 (verb_morphology/paradigms)
+  2. MUST READ: chunks 031-044 (advanced_verbs/TAM, mood)
+  3. USE: chunks 044-049 (verbal_derivations/participles)
+  4. REFERENCE: All noun/adjective/numeral sections for word class info
+
+kbd-glossary (LOWEST PRIORITY):
+  1. USE: Ady-Ady_AP.csv (primary Kabardian dictionary)
+  2. USE: Rus-Ady_UASP.csv (Russian lookup)
+  3. REFERENCE: chunks 053-054 for postposition lemmas
+  4. REFERENCE: chunks 050-051 for adverb roots
+
+================================================================================
+SEARCH PATTERNS (GREP EXAMPLES)
+================================================================================
+
+Find TAM markers:
+  grep -E "суффикс\s+\-|временной" advanced_verbs/chunk_031*.txt
+
+Find negation:
+  grep -E "\-къым" advanced_verbs/chunk_034*.txt
+
+Find postpositions:
+  grep -E "гъун|мыш|хьэ|фэ" function_words/chunk_053*.txt
+
+Find multi-person verbs:
+  grep -i "полипер\|multi-person" verb_morphology/chunk_025*.txt
+
+Find relative clauses:
+  grep -i "причастие|relative" syntax/chunk_076*.txt
+
+Find translation examples:
+  grep -i "лэжьэ" sents_292k.csv | head -5
+
+================================================================================
+KEY TAKEAWAYS
+================================================================================
+
+1. GRAMMAR IS ORGANIZED LOGICALLY
+   - Phonetics → Morphology → Syntax
+   - Each section builds on previous
+
+2. THREE CHUNKS ARE CRITICAL (read first!)
+   - Chunks 074-075: SOV word order (absolutely essential)
+   - Chunks 031-044: TAM/mood/negation (verb morphology)
+   - Chunks 053-055: Postpositions/conjunctions (sentence structure)
+
+3. USE GREP, NEVER USE READ ON LARGE FILES
+   - All CSV files >3MB should use Grep with -m N limit
+   - Never load entire 45MB corpus in memory
+
+4. CORPUS-FIRST APPROACH FOR kbd-translator
+   - Start with sents_292k.csv
+   - Fall back to Rus-Ady_UASP.csv for unknown words
+   - Use grammar for verification
+
+5. SOV WORD ORDER IS MANDATORY
+   - Russian: Subject-Verb-Object
+   - Kabardian: Subject-Object-Verb
+   - This is THE MOST IMPORTANT difference in translation
+
+================================================================================
+USAGE NOTES
+================================================================================
+
+- All chunk files are readable text extracted from academic grammar PDF
+- Pages covered: 26-404 (first 60% of original grammar, most important)
+- Chunks contain OCR-extracted text with some formatting artifacts
+- Tables show inflectional paradigms (essential references)
+- Examples show real usage from Kabardian literature
+- HTML in glossaries needs parsing to extract Kabardian content
+
+================================================================================
